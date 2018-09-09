@@ -1,0 +1,73 @@
+# Kivy Lesson
+
+## Blank Screen
+
+Default size.
+
+    from kivy.app import App
+    App().run()
+
+## Create Class
+
+    class CameraTester(App):
+        pass
+
+Run app using name of class.
+
+    CameraTester().run()
+
+## Create new kivy language file
+
+The file name must be the same as the class name with a *.kv* extension *cameratester.kv*. 
+
+    Label: 
+        text: "Camera Tester"
+
+image::img/text-label.png[]
+
+
+
+## Add Grid Layout In Python
+    from kivy.uix.gridlayout import GridLayout
+    
+    class MainScreen(GridLayout):
+        pass
+
+
+## Add Root Object
+
+    <MainScreen>:
+    MainScreen:
+
+        Label: 
+            text: "Camera Tester"
+
+## Add Rows
+
+Under MainScreen:
+
+    rows: 4
+
+## Add BoxLayout for Second Row
+
+Add four buttons
+
+    BoxLayout:
+        orientation: "horizontal"
+        Button:
+            text: "Button 1"
+        Button:
+            text: "Button 2"
+        Button:
+            text: "Button 3"
+        Button:
+            text: "Button 4"
+
+
+image::img/buttons.png[]
+
+## Add Input Box
+
+    TextInput:
+
+image::img/textinput1.png[]
