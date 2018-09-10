@@ -28,6 +28,9 @@ image::img/text-label.png[]
 
 
 ## Add Grid Layout In Python
+
+in Python file
+
     from kivy.uix.gridlayout import GridLayout
     
     class MainScreen(GridLayout):
@@ -35,6 +38,8 @@ image::img/text-label.png[]
 
 
 ## Add Root Object
+
+in kv file
 
     <MainScreen>:
     MainScreen:
@@ -44,13 +49,13 @@ image::img/text-label.png[]
 
 ## Add Rows
 
-Under MainScreen:
+In kv file, under MainScreen:
 
     rows: 4
 
 ## Add BoxLayout for Second Row
 
-Add four buttons
+Add four buttons in kv file
 
     BoxLayout:
         orientation: "horizontal"
@@ -68,6 +73,27 @@ image::img/buttons.png[]
 
 ## Add Input Box
 
+In kv file
+
     TextInput:
 
 image::img/textinput1.png[]
+
+## Add Output Box
+
+Use **Label** to create the output box.
+
+    Label:
+    text: "this is the bottom output box"
+
+
+## Add 5th row
+
+* Add another row
+* Create a horizontal box for the 5th row
+* Add Slider:
+* Add Switch:
+* Add Image:
+** Source: "filename.png"
+
+image::img/row5.png[]
