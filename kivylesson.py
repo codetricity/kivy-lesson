@@ -7,7 +7,8 @@ class CameraTester(App):
 
 
 class MainScreen(GridLayout):
-    pass
+    def buttonOne(self):
+        print("pressed button 1")
 
 
 CameraTester().run()
